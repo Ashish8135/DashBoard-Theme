@@ -61,6 +61,19 @@
 		<!-- navbar ends -->
 
 
+		   <!-- Header section starts -->
+    <header id="header" class="bg-primary py-2 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-pencil-alt"></i>Post One</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section ends -->
+
+
 		<!-- action section starts -->
 		<section id="action-section" class="py-4 mb-4 bg-light">
 			<div class="container">
@@ -75,6 +88,58 @@
 						<a href="" class="btn btn-danger btn-block"><i class="fas fa-trash"></i>Delete Post</a>
 					</div>
 				</div>
+			</div>
+		</section>
+
+
+
+			<!-- ADD POST MODALS -->
+		<section id="edit-post">
+			<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+					<div class="card-header">
+						<h5 class="card-title">Edit Post</h5>
+						
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="title">Title</label>
+								<input type="text" class="form-control" name="name">
+							</div>
+							<div class="form-group">
+								<label for="catagory">Catagory</label>
+								<select class="form-control">
+									<option value="">Web Development</option>
+									<option value="">Mobile App Development</option>
+									<option value="">Software Development</option>
+									<option value="">Web Designing</option>
+									<option value="">Graphic Designing</option>
+									<option value="">Content Writing</option>
+								</select> 
+							</div>
+							<div class="form-group">
+								<label for="image">Upload Image</label>
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="image" name="">
+									<label for="image" class="custom-file-label">Choose file</label>
+								</div>
+								<small>Max Size 3mb</small>
+							</div>
+							<div class="form-group">
+								<label for="body">Body</label>
+								<textarea class="form-control" name="editor1"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary text-center" data-dismiss="modal">Save Changes</button>
+					</div>
+				</div>
+			</div>
+			</div>
 			</div>
 		</section>
 
